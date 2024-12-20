@@ -1,0 +1,569 @@
+{
+	"info": {
+		"_postman_id": "c3d89efd-d069-49b4-8998-67e8efd76503",
+		"name": "Fitrack-API-Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27881959"
+	},
+	"item": [
+		{
+			"name": "user-signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"testuser2@example.com\",\r\n  \"password\": \"Password123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"testuser1@example.com\",\r\n  \"password\": \"Password123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDU0NzU0MSwiZXhwIjoxNzM1MTUyMzQxfQ.Y8N73OUM6RcAgorO-9xt26i6MX77DWH3J2fmAsOOgRQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/users/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-exercises",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDU0NzU0MSwiZXhwIjoxNzM1MTUyMzQxfQ.Y8N73OUM6RcAgorO-9xt26i6MX77DWH3J2fmAsOOgRQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"Cycling\",\r\n    \"duration\": 45,\r\n    \"distance\": 15,\r\n    \"calories\": 500\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/exercises",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"exercises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-exercises",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDU0NzU0MSwiZXhwIjoxNzM1MTUyMzQxfQ.Y8N73OUM6RcAgorO-9xt26i6MX77DWH3J2fmAsOOgRQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/exercises",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"exercises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-exercise-byID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDU0NzU0MSwiZXhwIjoxNzM1MTUyMzQxfQ.Y8N73OUM6RcAgorO-9xt26i6MX77DWH3J2fmAsOOgRQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/exercises/67631c189be3c4586d56106d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"exercises",
+						"67631c189be3c4586d56106d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put-exercise-byID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDU0NzU0MSwiZXhwIjoxNzM1MTUyMzQxfQ.Y8N73OUM6RcAgorO-9xt26i6MX77DWH3J2fmAsOOgRQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"Cycling\",\r\n    \"duration\": 60,\r\n    \"distance\": 20,\r\n    \"calories\": 600\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/exercises/67631c189be3c4586d56106d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"exercises",
+						"67631c189be3c4586d56106d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-exercise",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDU0NzU0MSwiZXhwIjoxNzM1MTUyMzQxfQ.Y8N73OUM6RcAgorO-9xt26i6MX77DWH3J2fmAsOOgRQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/exercises/67631c189be3c4586d56106d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"exercises",
+						"67631c189be3c4586d56106d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-nutrition",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDYyNDUyMCwiZXhwIjoxNzM1MjI5MzIwfQ.I6EfwgIhIFhdEdWbOvMLb9LtHbwAjkGFD4cYhBQC7-Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"foodItem\": \"Idli\",\r\n  \"calories\": 400,\r\n  \"protein\": 3,\r\n  \"carbs\": 100,\r\n  \"fat\": 20,\r\n  \"servingSize\": \"6 Idli\",\r\n  \"mealType\": \"breakfast\",\r\n  \"date\": \"2024-12-18T12:00:00Z\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/nutrition/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"nutrition",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-nutrtion",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDYyNDUyMCwiZXhwIjoxNzM1MjI5MzIwfQ.I6EfwgIhIFhdEdWbOvMLb9LtHbwAjkGFD4cYhBQC7-Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/nutrition",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"nutrition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-nutrition",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDYyNDUyMCwiZXhwIjoxNzM1MjI5MzIwfQ.I6EfwgIhIFhdEdWbOvMLb9LtHbwAjkGFD4cYhBQC7-Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/nutrition/67644941295b506ebb218457",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"nutrition",
+						"67644941295b506ebb218457"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set-goal",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDYyNDUyMCwiZXhwIjoxNzM1MjI5MzIwfQ.I6EfwgIhIFhdEdWbOvMLb9LtHbwAjkGFD4cYhBQC7-Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dailyCaloriesGoal\": 4000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/nutrition/goal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"nutrition",
+						"goal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-nutrition-goal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDYyNDUyMCwiZXhwIjoxNzM1MjI5MzIwfQ.I6EfwgIhIFhdEdWbOvMLb9LtHbwAjkGFD4cYhBQC7-Y",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/nutrition/goal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"nutrition",
+						"goal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-fitness-goal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDYyNDUyMCwiZXhwIjoxNzM1MjI5MzIwfQ.I6EfwgIhIFhdEdWbOvMLb9LtHbwAjkGFD4cYhBQC7-Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"goalType\": \"fitness\",\r\n  \"targetValue\": 5000,\r\n  \"currentValue\": 1000,\r\n  \"startDate\": \"2024-12-01\",\r\n  \"endDate\": \"2024-12-31\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/goals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"goals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-fitness-goals",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDYyNDUyMCwiZXhwIjoxNzM1MjI5MzIwfQ.I6EfwgIhIFhdEdWbOvMLb9LtHbwAjkGFD4cYhBQC7-Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/goals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"goals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-fitness-goalbyID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDYyNDUyMCwiZXhwIjoxNzM1MjI5MzIwfQ.I6EfwgIhIFhdEdWbOvMLb9LtHbwAjkGFD4cYhBQC7-Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/goals/6764506dac2e27f8adaa3e98",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"goals",
+						"6764506dac2e27f8adaa3e98"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-fitness-goal",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDYyNDUyMCwiZXhwIjoxNzM1MjI5MzIwfQ.I6EfwgIhIFhdEdWbOvMLb9LtHbwAjkGFD4cYhBQC7-Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"goalType\": \"mental health\",\r\n  \"targetValue\": 8,\r\n  \"currentValue\": 4,\r\n  \"startDate\": \"2024-12-01\",\r\n  \"endDate\": \"2024-12-31\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/goals/6764506dac2e27f8adaa3e98",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"goals",
+						"6764506dac2e27f8adaa3e98"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-fitness-goal",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjMxNDI1ZTY4YzgyMTI5YzNhM2JlZSIsImlhdCI6MTczNDYyNDUyMCwiZXhwIjoxNzM1MjI5MzIwfQ.I6EfwgIhIFhdEdWbOvMLb9LtHbwAjkGFD4cYhBQC7-Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/goals/6764506dac2e27f8adaa3e98",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"goals",
+						"6764506dac2e27f8adaa3e98"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
